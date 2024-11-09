@@ -28,11 +28,8 @@ jobs:
       - name: build with mingw-w64
         run: |
           make -f Makefile.mingw
-      - name: pwd
-        run: |
-          pwd
       - uses: actions/upload-artifact@v4
         with:
           name: sslscan
           path: |
-            /home/runner/work/sslscan/sslscan/openssl_mingw/sslscan.exe
+            /home/runner/work/sslscan/sslscan/sslscan.exe
